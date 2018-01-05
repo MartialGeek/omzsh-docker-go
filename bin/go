@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker run --rm -v ${GOPATH}:/go -w /go -u 1000:1000 golang:1.8 go ${@}
+
